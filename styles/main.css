@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'Museo Sans Cyrl';
+  src: local("Museo Sans Cyrl 500"), local("MuseoSansCyrl-500"), url("../fonts/Museosanscyrl500.woff2") format("woff2"), url("../fonts/Museosanscyrl500.woff") format("woff"), url("../fonts/Museosanscyrl500.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+:root, html {
+  font-family: 'Museo Sans Cyrl' !important;
+  font-size: 18px !important;
+}
+
+.header__wrapper {
+  position: relative;
+  z-index: -2;
+  height: 954px;
+  background-image: url("../images/header-main-bg.png");
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+
+.header__wrapper::after, .header__wrapper::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header__wrapper::after {
+  background-image: url("../images/header-triangles-bg-1.png");
+}
+
+.header__wrapper::before {
+  background-image: url("../images/header-triangles-bg-2.png");
+}
+
+.classification__wrapper {
+  height: 3881px;
+  background-image: url("../images/classification-bg.png"), url("../images/classification-bg-2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: -40px top, center 550px;
+}
+
+.advantages__wrapper {
+  background-image: url("../images/advantages-bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center 500px;
+}
+
+.action__wrapper {
+  height: 929px;
+  background-image: url("../images/action-bg.png"), url("..//images//action-bg-2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top left, center 100px;
+}
+/*# sourceMappingURL=main.css.map */
