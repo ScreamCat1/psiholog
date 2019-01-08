@@ -5,9 +5,28 @@
     font-style: normal;
 }
 
+ul {
+    padding: 0;
+    list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+figure {
+    margin: 0;
+}
+
 :root, html {
     font-family: 'Museo Sans Cyrl' !important;
     font-size: 18px !important;
+}
+
+body {
+    position: relative;
+    z-index: -5;
 }
 
 .header {
@@ -16,6 +35,7 @@
         z-index: -2;
 
         // TODO Delete it
+        padding-top: 17px;
         height: 954px;
 
         background-image:
@@ -48,6 +68,89 @@
             background-image: url('../images/header-triangles-bg-2.png');
         }
     }
+
+    &__places {
+        font-size: 16px;
+        line-height: 20px;
+        color: rgb(55, 32, 76);
+    }
+
+    &__phone {
+        font-size: 24px;
+        color: rgb(55,32,76);
+        font-weight: bold;
+
+        &:hover {
+            color: rgb(55,32,76);
+        }
+    }
+
+    &__btn {
+        width: 270px;
+        height: 56px;
+        box-sizing: border-box;
+        border: 2px solid #371f4b;
+        border-radius: 26px;
+
+        background-color: rgba(105,118,147,0);
+        cursor: pointer;
+
+        font-size: 16px;
+        color: rgb(55,32,76);
+        text-align: center
+    }
+
+    &__title {
+        margin-top: 29px;
+        margin-bottom:  32px;
+
+        font-size: 60px;
+        line-height: 60px;
+        color: rgb(55,32,76);
+    }
+
+    &__subtitle {
+        margin-bottom: 46px;
+
+        font-size: 24px;
+        line-height: 28px;
+        color: rgb(55,32,76);
+    }
+
+    &__navigation-list {
+        margin-top: 42px;
+    }
+
+    &__navigation-link {
+
+        font-size: 14px;
+        line-height: 32px;
+        color: rgb(55,32,76);
+        font-weight: bold;
+        text-transform: uppercase;
+
+        &:hover {
+            font-size: 14px;
+            color: #7c7698;
+            text-decoration: none;
+        }
+    }
+
+    &__figure {
+        height: 125px;
+        margin-bottom: 60px;
+
+        > img {
+            object-fit: contain;
+        }
+    }
+
+    &__figcaption {
+        line-height: 28px;
+        color: rgb(130,84,71);
+        font-weight: bold;
+    }
+
 }
 
 .classification {
@@ -58,6 +161,14 @@
         background-repeat: no-repeat;
         background-size: contain;
         background-position: -40px top, center 550px;
+    }
+
+    &__title {
+        max-width: 537px;
+        margin: 0 auto 87px;
+
+        font-size: 30px;
+        color: rgb(55,32,76);
     }
 }
 
@@ -78,5 +189,100 @@
         background-repeat: no-repeat;
         background-size: contain;
         background-position: top left, center 100px;
+    }
+}
+
+.form {
+    &__wrapper {
+        margin: 0 auto;
+        width: 1245px;
+        height: 210px;
+        box-shadow: 0 8px 18px rgba(226, 226, 226, 0.98);
+        border-radius: 5px;
+        background-color: #7c7698;
+
+        background-image: url('../images/form-bg.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right bottom;
+    }
+
+    &__title {
+        padding-top: 33px;
+        max-width: 682px;
+        margin: 0 auto;
+        margin-bottom: 25px;
+
+        font-size: 24px;
+        font-weight: normal;
+        color: rgb(255,255,255);
+    }
+
+    &__input {
+        width: 100%;
+        height: 60px;
+        border-radius: 28px;
+        padding-left: 23px;
+        border: 0;
+        box-sizing: border-box;
+
+        background-color: #ffffff;
+
+        &::placeholder {
+            font-size: 16px;
+            line-height: 32px;
+            color: rgb(45,45,45);
+        }
+
+        &--btn {
+            width: 288px;
+
+            background-color: #6345be;
+
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 32px;
+            color: rgb(255,255,255);
+            text-align: center;
+        }
+    }
+}
+
+.about {
+    margin-top: 67px;
+
+    &__title {
+        max-width: 1003px;
+        margin: 0 auto 89px;
+
+        font-size: 30px;
+        color: rgb(55,32,76);
+        font-weight: bold;
+    }
+
+    &__subtitle {
+        margin-bottom: 36px;
+
+        font-size: 26px;
+        line-height: 28px;
+        color: rgb(38,38,38);
+        font-weight: bold;
+    }
+
+    &__img {
+        width: 100%;
+        object-fit: contain;
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 28px;
+        color: rgb(38,38,38);
+    }
+
+    &__decor {
+        font-size: 200px;
+        color: rgb(246,250,252);
+        text-transform: uppercase;
     }
 }

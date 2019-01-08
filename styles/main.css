@@ -5,14 +5,35 @@
   font-style: normal;
 }
 
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+figure {
+  margin: 0;
+}
+
 :root, html {
   font-family: 'Museo Sans Cyrl' !important;
   font-size: 18px !important;
 }
 
+body {
+  position: relative;
+  z-index: -5;
+}
+
 .header__wrapper {
   position: relative;
   z-index: -2;
+  padding-top: 17px;
   height: 954px;
   background-image: url("../images/header-main-bg.png");
   background-position: right top;
@@ -40,12 +61,98 @@
   background-image: url("../images/header-triangles-bg-2.png");
 }
 
+.header__places {
+  font-size: 16px;
+  line-height: 20px;
+  color: #37204c;
+}
+
+.header__phone {
+  font-size: 24px;
+  color: #37204c;
+  font-weight: bold;
+}
+
+.header__phone:hover {
+  color: #37204c;
+}
+
+.header__btn {
+  width: 270px;
+  height: 56px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid #371f4b;
+  border-radius: 26px;
+  background-color: rgba(105, 118, 147, 0);
+  cursor: pointer;
+  font-size: 16px;
+  color: #37204c;
+  text-align: center;
+}
+
+.header__title {
+  margin-top: 29px;
+  margin-bottom: 32px;
+  font-size: 60px;
+  line-height: 60px;
+  color: #37204c;
+}
+
+.header__subtitle {
+  margin-bottom: 46px;
+  font-size: 24px;
+  line-height: 28px;
+  color: #37204c;
+}
+
+.header__navigation-list {
+  margin-top: 42px;
+}
+
+.header__navigation-link {
+  font-size: 14px;
+  line-height: 32px;
+  color: #37204c;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.header__navigation-link:hover {
+  font-size: 14px;
+  color: #7c7698;
+  text-decoration: none;
+}
+
+.header__figure {
+  height: 125px;
+  margin-bottom: 60px;
+}
+
+.header__figure > img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.header__figcaption {
+  line-height: 28px;
+  color: #825447;
+  font-weight: bold;
+}
+
 .classification__wrapper {
   height: 3881px;
   background-image: url("../images/classification-bg.png"), url("../images/classification-bg-2.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: -40px top, center 550px;
+}
+
+.classification__title {
+  max-width: 537px;
+  margin: 0 auto 87px;
+  font-size: 30px;
+  color: #37204c;
 }
 
 .advantages__wrapper {
@@ -61,5 +168,112 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top left, center 100px;
+}
+
+.form__wrapper {
+  margin: 0 auto;
+  width: 1245px;
+  height: 210px;
+  -webkit-box-shadow: 0 8px 18px rgba(226, 226, 226, 0.98);
+          box-shadow: 0 8px 18px rgba(226, 226, 226, 0.98);
+  border-radius: 5px;
+  background-color: #7c7698;
+  background-image: url("../images/form-bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right bottom;
+}
+
+.form__title {
+  padding-top: 33px;
+  max-width: 682px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  font-size: 24px;
+  font-weight: normal;
+  color: white;
+}
+
+.form__input {
+  width: 100%;
+  height: 60px;
+  border-radius: 28px;
+  padding-left: 23px;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+.form__input::-webkit-input-placeholder {
+  font-size: 16px;
+  line-height: 32px;
+  color: #2d2d2d;
+}
+
+.form__input:-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 32px;
+  color: #2d2d2d;
+}
+
+.form__input::-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 32px;
+  color: #2d2d2d;
+}
+
+.form__input::placeholder {
+  font-size: 16px;
+  line-height: 32px;
+  color: #2d2d2d;
+}
+
+.form__input--btn {
+  width: 288px;
+  background-color: #6345be;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 32px;
+  color: white;
+  text-align: center;
+}
+
+.about {
+  margin-top: 67px;
+}
+
+.about__title {
+  max-width: 1003px;
+  margin: 0 auto 89px;
+  font-size: 30px;
+  color: #37204c;
+  font-weight: bold;
+}
+
+.about__subtitle {
+  margin-bottom: 36px;
+  font-size: 26px;
+  line-height: 28px;
+  color: #262626;
+  font-weight: bold;
+}
+
+.about__img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.about__text {
+  font-size: 18px;
+  line-height: 28px;
+  color: #262626;
+}
+
+.about__decor {
+  font-size: 200px;
+  color: #f6fafc;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=main.css.map */

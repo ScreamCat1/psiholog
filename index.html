@@ -22,115 +22,134 @@
 
     <header class="header__wrapper">
         <div class="container">
-            <div class="row">
+            <div class="row align-items-center">
                 <div class="col-12 col-md-2">
-                    ProSvet
+                    <img src="./images/logo.png"
+                         alt="">
                 </div>
-                <div class="col-12 col-lg-6 col-xl-4">
-                    Услуги психологов в Киеве, Бердянске, Ужгороде, Хмельницком
-                </div>
-                <div class="col-12 col-lg-4 col-xl-3">
-                    +38 097 783 8282
+                <h3 class="col-12 col-lg-6 col-xl-4 header__places">
+                    Услуги психологов в Киеве, <br>
+                    Бердянске, Ужгороде, Хмельницком
+                </h3>
+                <div class="col-12 col-lg-4 col-xl-3 text-right">
+                    <a href="tel:+380977838282"
+                       class="header__phone">+38 097 783 8282</a>
                 </div>
                 <div class="col-12 col-md-6 col-xl-3">
-                    <button>Давайте мы пепезвоним</button>
+                    <button class="header__btn">Давайте мы пепезвоним</button>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12 col-lg-8">
-                    <h1>
+                    <h1 class="header__title">
                         Центр психологической
                         консультации
                     </h1>
-                    <h2>
+                    <h2 class="header__subtitle">
                         по построению личной жизни, улучшению детско-
                         родительских отношений, выхода из морального кризиса
                     </h2>
                 </div>
                 <nav class="col-12 col-lg-2 offset-lg-2">
-                    <ul>
+                    <ul class="header__navigation-list text-right">
                         <li>
-                            <a href="">о нас</a>
+                            <a href=""
+                               class="header__navigation-link">о нас</a>
                         </li>
                         <li>
-                            <a href="">наши услуги</a>
+                            <a href=""
+                               class="header__navigation-link">наши услуги</a>
                         </li>
                         <li>
-                            <a href="">контакты</a>
+                            <a href=""
+                               class="header__navigation-link">контакты</a>
                         </li>
                     </ul>
                 </nav>
             </div>
             <ul class="row">
                 <li class="col-12 col-md-4 col-lg-3">
-                    <figure>
-                        <img src=""
+                    <figure class="header__figure d-flex flex-column justify-content-between align-items-start">
+                        <img src="./images/calendar.png"
                              alt="">
-                        <figcaption>
-                            Практикующие психологи
+                        <figcaption class="header__figcaption">
+                            Практикующие психологи <br>
                             с опытом более 15 лет
                         </figcaption>
                     </figure>
                 </li>
                 <li class="col-12 col-md-4 col-lg-3">
-                    <figure>
-                        <img src=""
+                    <figure class="header__figure d-flex flex-column justify-content-between align-items-start">
+                        <img src="./images/dialog.png"
                              alt="">
-                        <figcaption>
-                            Первая консультация
+                        <figcaption class="header__figcaption">
+                            Первая консультация <br>
                             психолога бесплатно
                         </figcaption>
                     </figure>
                 </li>
                 <li class="col-12 col-md-4 col-lg-3">
-                    <figure>
-                        <img src=""
+                    <figure class="header__figure d-flex flex-column justify-content-between align-items-start">
+                        <img src="./images/schedule.png"
                              alt="">
-                        <figcaption>
-                            Более 50 авторских психологических тестов
+                        <figcaption class="header__figcaption">
+                            Более 50 авторских <br>
+                            психологических тестов
                         </figcaption>
                     </figure>
                 </li>
             </ul>
-            <div>
-                <h3 class="text-center">
-                    Заполните форму и получите доступ к бесплатному тесту,
+            <div class="form__wrapper">
+                <h3 class="text-center form__title">
+                    <b>Заполните форму</b> и получите доступ к бесплатному тесту,
                     который определит тип Вашей личности и характера
                 </h3>
                 <form action=""
-                      class="row justify-content-center">
-                    <input class="col-12 col-md-8 col-lg-3"
-                           type="text">
-                    <input class="col-12 col-md-8 col-lg-3"
-                           type="text">
-                    <input class="col-12 col-md-8 col-lg-3"
-                           type="text">
-                    <button class="col-12 col-md-8 col-lg-3">получить тест</button>
+                      class="row justify-content-center align-items-center">
+                    <div class="col-12 col-md-8 col-lg-3">
+                        <input class="form__input"
+                               placeholder="Ваше имя"
+                               required
+                               type="text">
+                    </div>
+                    <div class="col-12 col-md-8 col-lg-3">
+                        <input class="form__input"
+                               placeholder="Ваш e-mail"
+                               required
+                               type="email">
+                    </div>
+                    <div class="col-12 col-md-8 col-lg-3">
+                        <input class="form__input"
+                               placeholder="Ваш телефон"
+                               required
+                               type="text">
+                    </div>
+                    <div class="col-12 col-md-8 col-lg-3">
+                        <button class="form__input form__input--btn">Получить тест</button>
+                    </div>
                 </form>
             </div>
         </div>
     </header>
 
     <article class="container about">
-        <h2 class="text-center">
+        <h2 class="text-center about__title">
             Провели более 5000 психологических консультаций
             и наши клиенты обрели психологическое здоровье и радость жизни
         </h2>
         <ul>
             <li>
                 <figure class="row">
-                    <div class="col-12 col-lg-6">
-                        <img src=""
-                             alt=""
-                             width="470"
-                             height="400">
-                        <div>28</div>
+                    <div class="col-12 col-lg-5">
+                        <img class="about__img" src="./images/about-1.png"
+                             alt="">
+                        <div class="about__decor">28</div>
                     </div>
-                    <figcapture class="col-12 col-lg-6">
-                        <h4>
+                    <figcapture class="col-12 offset-lg-1 col-lg-6 d-flex flex-column justify-content-center">
+                        <h4 class="about__subtitle">
                             28 лет успешного психологического консультирования
                         </h4>
-                        <p>
+                        <p class="about__text">
                             На протяжении этих лет, наши психологи сталкивались с самыми разными случаями дисгармонии
                             психологического здоровья, развития ложных убеждений и возникновение блоков —
                             в семьях, у мужчин, женщин, подростков и детей. В итоге, мы провели более 5000
@@ -141,19 +160,17 @@
             </li>
             <li>
                 <figure class="row">
-                    <div class="col-12 col-lg-6">
-                        <img src=""
-                             alt=""
-                             width="470"
-                             height="400">
-                        <div>28</div>
+                    <div class="col-12 col-lg-5">
+                        <img class="about__img" src="./images/about-2.png"
+                             alt="">
+                        <div class="about__decor">28</div>
                     </div>
-                    <figcapture class="col-12 col-lg-6">
-                        <h4>
+                    <figcapture class="col-12 offset-lg-1 col-lg-6 d-flex flex-column justify-content-center">
+                        <h4 class="about__subtitle">
                             Психологи, практикующие
                             более 15 лет
                         </h4>
-                        <p>
+                        <p class="about__text">
                             Наши психологи — дипломированные специалисты высшей
                             и первой категорий, по направлению семейная, личная
                             и профессиональная сфера жизни, которые более 15 лет практикуют восстановление
@@ -166,18 +183,16 @@
             </li>
             <li>
                 <figure class="row">
-                    <div class="col-12 col-lg-6">
-                        <img src=""
-                             alt=""
-                             width="470"
-                             height="400">
-                        <div>28</div>
+                    <div class="col-12 col-lg-5">
+                        <img class="about__img" src="./images/about-3.png"
+                             alt="">
+                        <div class="about__decor">28</div>
                     </div>
-                    <figcapture class="col-12 col-lg-6">
-                        <h4>
+                    <figcapture class="col-12 offset-lg-1 col-lg-6 d-flex flex-column justify-content-center">
+                        <h4 class="about__subtitle">
                             Современные технологии психологической диагностики
                         </h4>
-                        <p>
+                        <p class="about__text">
                             Для оказания качественного психологического консультирования мы используем метафорические
                             ассоциативные карты (МАК), тестовые методики, анкетирование, собеседование для анализа
                             личной ситуации, мотиваций, ложных убеждений, выбор здоровой концепции жизненных целей. Что
@@ -189,19 +204,17 @@
             </li>
             <li>
                 <figure class="row">
-                    <div class="col-12 col-lg-6">
-                        <img src=""
-                             alt=""
-                             width="470"
-                             height="400">
-                        <div>28</div>
+                    <div class="col-12 col-lg-5">
+                        <img class="about__img" src="./images/about-4.png"
+                             alt="">
+                        <div class="about__decor">28</div>
                     </div>
-                    <figcapture class="col-12 col-lg-6">
-                        <h4>
+                    <figcapture class="col-12 offset-lg-1 col-lg-6 d-flex flex-column justify-content-center">
+                        <h4 class="about__subtitle">
                             Полная конфиденциальность
                             посещений и информации
                         </h4>
-                        <p>
+                        <p class="about__text">
                             Психологи центра строго придерживаются профессиональной этики и Вы получаете полную
                             конфиденциальность Вашей личной информации.
                         </p>
@@ -210,18 +223,16 @@
             </li>
             <li>
                 <figure class="row">
-                    <div class="col-12 col-lg-6">
-                        <img src=""
-                             alt=""
-                             width="470"
-                             height="400">
-                        <div>28</div>
+                    <div class="col-12 col-lg-5">
+                        <img class="about__img" src="./images/about-5.png"
+                             alt="">
+                        <div class="about__decor">28</div>
                     </div>
-                    <figcapture class="col-12 col-lg-6">
-                        <h4>
+                    <figcapture class="col-12 offset-lg-1 col-lg-6 d-flex flex-column justify-content-center">
+                        <h4 class="about__subtitle">
                             Удобный способ оплаты
                         </h4>
-                        <p>
+                        <p class="about__text">
                             Оплата производится картой любого банка или наложенным платежом. Также можете совершать
                             оплату при консультации
                             за 1 сеанс.
@@ -235,20 +246,17 @@
 
     <article class="classification__wrapper">
         <div class="container">
-            <h2 class="text-center">
-                Оплата производится картой любого банка или наложенным платежом. Также можете совершать оплату при
-                консультации
-                за 1 сеанс.
+            <h2 class="text-center classification__title">
+                Для кого подходит психологическая
+                консультация и какие задачи решает
             </h2>
             <ul>
                 <li>
                     <figure class="row">
-                        <img class="col-12 col-lg-6"
-                             src=""
-                             alt=""
-                             width="470"
-                             height="335">
-                        <figcaption class="col-12 col-lg-6">
+                        <div class="col-12 col-lg-5">
+                            <img src="./images/class-1.png" >
+                        </div>
+                        <figcaption class="col-12 offset-lg-1 col-lg-5">
                             <h4>
                                 Семейные пары и отношения
                                 мужчины и женщины
@@ -275,12 +283,10 @@
                 </li>
                 <li>
                     <figure class="row">
-                        <img class="col-12 col-lg-6"
-                             src=""
-                             alt=""
-                             width="470"
-                             height="335">
-                        <figcaption class="col-12 col-lg-6">
+                        <div class="col-12 col-lg-5">
+                            <img src="./images/class-2.png">
+                        </div>
+                        <figcaption class="col-12 offset-lg-1 col-lg-5">
                             <h4>
                                 Отношения и трудности
                                 в воспитании детей
@@ -316,12 +322,10 @@
                 </li>
                 <li>
                     <figure class="row">
-                        <img class="col-12 col-lg-6"
-                             src=""
-                             alt=""
-                             width="470"
-                             height="335">
-                        <figcaption class="col-12 col-lg-6">
+                            <div class="col-12 col-lg-5">
+                                    <img src="./images/class-3.png">
+                                </div>
+                                <figcaption class="col-12 offset-lg-1 col-lg-5">
                             <h4>
                                 Мужчинам
                             </h4>
@@ -351,12 +355,10 @@
                 </li>
                 <li>
                     <figure class="row">
-                        <img class="col-12 col-lg-6"
-                             src=""
-                             alt=""
-                             width="470"
-                             height="335">
-                        <figcaption class="col-12 col-lg-6">
+                            <div class="col-12 col-lg-5">
+                                    <img src="./images/class-4.png">
+                                </div>
+                                <figcaption class="col-12 offset-lg-1 col-lg-5">
                             <h4>
                                 Помощь в постановке целей
                                 и принятии решений в бизнесе
@@ -393,12 +395,10 @@
                 </li>
                 <li>
                     <figure class="row">
-                        <img class="col-12 col-lg-6"
-                             src=""
-                             alt=""
-                             width="470"
-                             height="335">
-                        <figcaption class="col-12 col-lg-6">
+                            <div class="col-12 col-lg-5">
+                                    <img src="./images/class-5.png" >
+                                </div>
+                                <figcaption class="col-12 offset-lg-1 col-lg-5">
                             <h4>
                                 Женщинам
                             </h4>
@@ -431,12 +431,10 @@
                 </li>
                 <li>
                     <figure class="row">
-                        <img class="col-12 col-lg-6"
-                             src=""
-                             alt=""
-                             width="470"
-                             height="335">
-                        <figcaption class="col-12 col-lg-6">
+                            <div class="col-12 col-lg-5">
+                                    <img src="./images/class-6.png" >
+                                </div>
+                                <figcaption class="col-12 offset-lg-1 col-lg-5">
                             <h4>
                                 Детям и подросткам от 6 до 16 лет
                             </h4>
@@ -595,111 +593,139 @@
 
     <article class="container services">
         <h2>
-                Услуги психологического центра консультации
+            Услуги психологического центра консультации
         </h2>
 
         <ul>
             <li class="row">
                 <div class="col-12 col-lg-6">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
+                    <img src=""
+                         alt="">
+                    <img src=""
+                         alt="">
+                    <img src=""
+                         alt="">
+                    <img src=""
+                         alt="">
                 </div>
                 <div class="col-12 col-lg-6">
                     <h5>
-                            Бесплатная консультация психолога
-                            с опытом более 15 лет
+                        Бесплатная консультация психолога
+                        с опытом более 15 лет
                     </h5>
                     <p>
-                            Первая консультация психолога рекомендуется для выявления области, в которой необходимо решить вопрос, анализа сложившейся ситуации и выбора инструментария для работы
-                            с клиентом. В течение 30-50 мин, Вы получите ясную картину выхода из сложившейся ситуации и найти решения беспокоящих вопросов.
+                        Первая консультация психолога рекомендуется для выявления области, в которой необходимо решить
+                        вопрос, анализа сложившейся ситуации и выбора инструментария для работы
+                        с клиентом. В течение 30-50 мин, Вы получите ясную картину выхода из сложившейся ситуации и
+                        найти решения беспокоящих вопросов.
                     </p>
                     <button>
-                            Получить консультацию
+                        Получить консультацию
                     </button>
                 </div>
             </li>
             <li class="row">
                 <div class="col-12 col-lg-6">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
+                    <img src=""
+                         alt="">
+                    <img src=""
+                         alt="">
+                    <img src=""
+                         alt="">
+                    <img src=""
+                         alt="">
                 </div>
                 <div class="col-12 col-lg-6">
                     <h5>
-                            Диагностика у психолога
+                        Диагностика у психолога
                     </h5>
                     <p>
-                            Психодиагностика рассматривается как составляющая консультирования и опирается на результаты непосредственного наблюдения за клиентом, обобщение полученных данных и составления краткосрочного
-                            или долгосрочного плана коррекции для достижения поставленных задач.
+                        Психодиагностика рассматривается как составляющая консультирования и опирается на результаты
+                        непосредственного наблюдения за клиентом, обобщение полученных данных и составления
+                        краткосрочного
+                        или долгосрочного плана коррекции для достижения поставленных задач.
                     </p>
                     <button>
-                            Узнать подробнее
+                        Узнать подробнее
                     </button>
                 </div>
             </li>
             <li class="row">
                 <div class="col-12 col-lg-6">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
+                    <img src=""
+                         alt="">
+                    <img src=""
+                         alt="">
+                    <img src=""
+                         alt="">
+                    <img src=""
+                         alt="">
                 </div>
                 <div class="col-12 col-lg-6">
                     <h5>
-                            Психокоррекция — для развития здоровых сторон личности
+                        Психокоррекция — для развития здоровых сторон личности
                     </h5>
                     <p>
-                            Психокоррекция всегда ориентирована на здоровую личность, желающую изменить свою жизнь, либо ставящую перед собой цель развития личности. Чаще всего люди обращаются
-                            для изменения поведения и постановки целей в настоящем
-                            и будущем.
+                        Психокоррекция всегда ориентирована на здоровую личность, желающую изменить свою жизнь, либо
+                        ставящую перед собой цель развития личности. Чаще всего люди обращаются
+                        для изменения поведения и постановки целей в настоящем
+                        и будущем.
                     </p>
                     <button>
-                            Узнать подробнее
+                        Узнать подробнее
                     </button>
                 </div>
             </li>
             <li class="row">
                 <div class="col-12 col-lg-6">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
+                    <img src=""
+                         alt="">
+                    <img src=""
+                         alt="">
+                    <img src=""
+                         alt="">
+                    <img src=""
+                         alt="">
                 </div>
                 <div class="col-12 col-lg-6">
                     <h5>
-                            Психологическое сопровождение для преодоления сложных жизненных этапов
+                        Психологическое сопровождение для преодоления сложных жизненных этапов
                     </h5>
                     <p>
-                            Когда, в нашей жизни случаются ситуации или периоды,
-                            что самим справляться очень трудно, и нужно пережить эти периоды с минимальными эмоциональными травмами для себя, суметь принять необходимые и выгодные для вас решения,
-                            это и есть тот случай, когда требуется сопровождение психолога.
+                        Когда, в нашей жизни случаются ситуации или периоды,
+                        что самим справляться очень трудно, и нужно пережить эти периоды с минимальными эмоциональными
+                        травмами для себя, суметь принять необходимые и выгодные для вас решения,
+                        это и есть тот случай, когда требуется сопровождение психолога.
                     </p>
                     <button>
-                            Узнать подробнее
+                        Узнать подробнее
                     </button>
                 </div>
             </li>
             <li class="row">
                 <div class="col-12 col-lg-6">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
+                    <img src=""
+                         alt="">
+                    <img src=""
+                         alt="">
+                    <img src=""
+                         alt="">
+                    <img src=""
+                         alt="">
                 </div>
                 <div class="col-12 col-lg-6">
                     <h5>
-                            Определение профессиональной направленности у подростков (от 14 лет)
+                        Определение профессиональной направленности у подростков (от 14 лет)
                     </h5>
                     <p>
-                            Важным аспектом стоит отметить прохождение профессиональной направленности в возрасте от 14 лет,
-                            чтобы узнать интересы, тип мышления, намерения, склонности, мотивы, отношение к выбору профессии.
+                        Важным аспектом стоит отметить прохождение профессиональной направленности в возрасте от 14
+                        лет,
+                        чтобы узнать интересы, тип мышления, намерения, склонности, мотивы, отношение к выбору
+                        профессии.
 
                     </p>
                     <button>
-                            Узнать подробнее
+                        Узнать подробнее
                     </button>
                 </div>
             </li>
@@ -710,16 +736,16 @@
         <div class="container">
             <div class="action">
                 <h2>
-                        Акция!
+                    Акция!
                 </h2>
                 <p>
-                        Получите в подарок
-                        сертификат 3 000 грн на услуги
-                        психологического центра консультаций
+                    Получите в подарок
+                    сертификат 3 000 грн на услуги
+                    психологического центра консультаций
 
                 </p>
                 <p>
-                        До конца акции осталось:
+                    До конца акции осталось:
                 </p>
                 <div class="timmer">
 
@@ -727,11 +753,11 @@
             </div>
             <div class="action-form">
                 <h3>
-                        Заполните форму
+                    Заполните форму
                 </h3>
                 <p>
-                        чтобы получить в подарок сертификат на 3 000 грн
-                        на услуги психологического центра консультаций на Вашу почту через 15 мин
+                    чтобы получить в подарок сертификат на 3 000 грн
+                    на услуги психологического центра консультаций на Вашу почту через 15 мин
                 </p>
                 <form action="">
                     <div class="action-form__field">
@@ -753,22 +779,67 @@
 
     <article class="container reviews">
         <h2>
-                Отзывы наших клиентов
+            Отзывы наших клиентов
         </h2>
         <ul>
             <li>
                 <figure>
-                    <img src="" alt="">
+                    <img src=""
+                         alt="">
                     <figcaption>
                         <p>
-                                Подобно цитоплазматическим органеллам, ядерные тельца содержат специфический набор белков, которые определяют
-                                их структуру на молекулярном уровне. Многие ядерные тельца осуществляют специфические функции — например, синтез
-                                и процессинг пре-рибосомных РНК в ядрышке, накопление
-                                и сборку компонентов сплайсосом в ядерных спеклах
-                                или накопление молекул РНК в параспеклах.
+                            Подобно цитоплазматическим органеллам, ядерные тельца содержат специфический набор белков,
+                            которые определяют
+                            их структуру на молекулярном уровне. Многие ядерные тельца осуществляют специфические
+                            функции — например, синтез
+                            и процессинг пре-рибосомных РНК в ядрышке, накопление
+                            и сборку компонентов сплайсосом в ядерных спеклах
+                            или накопление молекул РНК в параспеклах.
                         </p>
                         <p>
-                                Надежда М.
+                            Надежда М.
+                        </p>
+
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src=""
+                         alt="">
+                    <figcaption>
+                        <p>
+                            Подобно цитоплазматическим органеллам, ядерные тельца содержат специфический набор белков,
+                            которые определяют
+                            их структуру на молекулярном уровне. Многие ядерные тельца осуществляют специфические
+                            функции — например, синтез
+                            и процессинг пре-рибосомных РНК в ядрышке, накопление
+                            и сборку компонентов сплайсосом в ядерных спеклах
+                            или накопление молекул РНК в параспеклах.
+                        </p>
+                        <p>
+                            Надежда М.
+                        </p>
+
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src=""
+                         alt="">
+                    <figcaption>
+                        <p>
+                            Подобно цитоплазматическим органеллам, ядерные тельца содержат специфический набор белков,
+                            которые определяют
+                            их структуру на молекулярном уровне. Многие ядерные тельца осуществляют специфические
+                            функции — например, синтез
+                            и процессинг пре-рибосомных РНК в ядрышке, накопление
+                            и сборку компонентов сплайсосом в ядерных спеклах
+                            или накопление молекул РНК в параспеклах.
+                        </p>
+                        <p>
+                            Надежда М.
                         </p>
 
                     </figcaption>
@@ -776,6 +847,158 @@
             </li>
         </ul>
     </article>
+
+    <article class="container">
+        <h2>
+            Наша команда психологов
+        </h2>
+        <ul class="row">
+            <li class="col-lg-4">
+                <figure>
+                    <img src=""
+                         alt="">
+                    <figcaption>
+                        <h5>
+                            Светлана Егоренкова
+                        </h5>
+                        <p>дожность</p>
+                    </figcaption>
+                </figure>
+            </li>
+            <li class="col-lg-4">
+                <figure>
+                    <img src=""
+                         alt="">
+                    <figcaption>
+                        <h5>
+                            Светлана Егоренкова
+                        </h5>
+                        <p>дожность</p>
+                    </figcaption>
+                </figure>
+            </li>
+            <li class="col-lg-4">
+                <figure>
+                    <img src=""
+                         alt="">
+                    <figcaption>
+                        <h5>
+                            Светлана Егоренкова
+                        </h5>
+                        <p>дожность</p>
+                    </figcaption>
+                </figure>
+            </li>
+        </ul>
+    </article>
+
+    <article class="container">
+        <h2>
+            Наши сертификаты
+        </h2>
+        <ul class="row">
+            <li class="col-lg-6">
+                <img src=""
+                     alt="">
+            </li>
+            <li class="col-lg-6">
+                <img src=""
+                     alt="">
+            </li>
+        </ul>
+    </article>
+
+    <article class="container">
+        <h2>
+            Получить консультацию психолога очень просто
+        </h2>
+        <ul class="row">
+            <li class="col-12 col-md-6 col-lg-4">
+                <figure>
+                    <img src=""
+                         alt="">
+                    <figcaption>
+
+                    </figcaption>
+                </figure>
+            </li>
+            <li class="col-12 col-md-6 col-lg-4">
+                <figure>
+                    <img src=""
+                         alt="">
+                    <figcaption>
+
+                    </figcaption>
+                </figure>
+            </li>
+            <li class="col-12 col-md-6 col-lg-4">
+                <figure>
+                    <img src=""
+                         alt="">
+                    <figcaption>
+
+                    </figcaption>
+                </figure>
+            </li>
+            <li class="col-12 col-md-6 col-lg-4">
+                <figure>
+                    <img src=""
+                         alt="">
+                    <figcaption>
+
+                    </figcaption>
+                </figure>
+            </li>
+        </ul>
+    </article>
+
+    <article class="container">
+        <h2>Наши контакты</h2>
+        <ul class="row">
+            <li class="col-12 col-md-6 col-lg-3">
+                <a href="">
+                    <img src=""
+                         alt="">
+                    <p></p>
+                </a>
+            </li>
+            <li class="col-12 col-md-6 col-lg-3">
+                <a href="">
+                    <img src=""
+                         alt="">
+                    <p></p>
+                </a>
+            </li>
+            <li class="col-12 col-md-6 col-lg-3">
+                <a href="">
+                    <img src=""
+                         alt="">
+                    <p></p>
+                </a>
+            </li>
+            <li class="col-12 col-md-6 col-lg-3">
+                <a href="">
+                    <img src=""
+                         alt="">
+                    <p></p>
+                </a>
+            </li>
+        </ul>
+    </article>
+
+    <footer>
+        <ul class="row">
+            <li class="col-12 col-md-6 col-lg-4">
+
+            </li>
+            <li class="col-12 col-md-6 col-lg-4">
+
+            </li>
+            <li class="col-12 col-md-6 col-lg-4">
+
+            </li>
+        </ul>
+    </footer>
 </body>
 
 </html>
